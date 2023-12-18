@@ -87,14 +87,14 @@ Current release info
 Installing rattler-build
 ========================
 
-Installing `rattler-build` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `rattler-build` from the `conda-forge/label/rattler-build_rc` channel can be achieved by adding `conda-forge/label/rattler-build_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/rattler-build_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `rattler-build` can be installed with `conda`:
+Once the `conda-forge/label/rattler-build_rc` channel has been enabled, `rattler-build` can be installed with `conda`:
 
 ```
 conda install rattler-build
@@ -109,26 +109,26 @@ mamba install rattler-build
 It is possible to list all of the versions of `rattler-build` available on your platform with `conda`:
 
 ```
-conda search rattler-build --channel conda-forge
+conda search rattler-build --channel conda-forge/label/rattler-build_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search rattler-build --channel conda-forge
+mamba search rattler-build --channel conda-forge/label/rattler-build_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search rattler-build --channel conda-forge
+mamba repoquery search rattler-build --channel conda-forge/label/rattler-build_rc
 
 # List packages depending on `rattler-build`:
-mamba repoquery whoneeds rattler-build --channel conda-forge
+mamba repoquery whoneeds rattler-build --channel conda-forge/label/rattler-build_rc
 
 # List dependencies of `rattler-build`:
-mamba repoquery depends rattler-build --channel conda-forge
+mamba repoquery depends rattler-build --channel conda-forge/label/rattler-build_rc
 ```
 
 
