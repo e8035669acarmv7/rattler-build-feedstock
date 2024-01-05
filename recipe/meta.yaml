@@ -1,13 +1,13 @@
 {% set name = "rattler-build" %}
-{% set version = "0.6.2rc4" %}
+{% set version = "0.6.2rc5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/prefix-dev/rattler-build/archive/018535801c1aa7719188ca7bd6ab20a746fa6d0c.tar.gz
-  sha256: 92d12050543d430b61c0cf23615fa627dd80fe7ed0e8b471d7b4819d5651a708
+  url: https://github.com/prefix-dev/rattler-build/archive/1eb0fd4416819c1e82f39e24c196da5bc0ade6b3.tar.gz
+  sha256: d16525fbf60cfe7642928cd70582b688e1c0323493ab48edd5544db3f3822cf8
 
 build:
   script:
