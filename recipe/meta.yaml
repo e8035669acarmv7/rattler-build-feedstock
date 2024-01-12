@@ -1,13 +1,13 @@
 {% set name = "rattler-build" %}
-{% set version = "0.6.2rc5" %}
+{% set version = "0.7.1rc1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/prefix-dev/rattler-build/archive/1eb0fd4416819c1e82f39e24c196da5bc0ade6b3.tar.gz
-  sha256: d16525fbf60cfe7642928cd70582b688e1c0323493ab48edd5544db3f3822cf8
+  url: https://github.com/prefix-dev/rattler-build/archive/e1c416229b3f2cb3d5e76bde4589312d9c6aa438.tar.gz
+  sha256: 4edf608422f350ab5d6fb5904cc863ec7ff510612f2195f5113b64cc873ecabb
 
 build:
   script:
@@ -22,7 +22,7 @@ build:
     - cargo-bundle-licenses --format yaml --output %SRC_DIR%/THIRDPARTY.yml   # [win]
     - del %PREFIX%\.crates2.json                                              # [win]
     - del %PREFIX%\.crates.toml                                               # [win]
-  number: 1
+  number: 0
   # disable binary prefix detection, because rattler-build encodes the old `anaconda1anaconda2anaconda3` prefix
   # somewhere to make old packages installable. In other words, conda-build finds a false-positive here.
   detect_binary_files_with_prefix: false
