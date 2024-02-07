@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/prefix-dev/rattler-build/archive/b2083d86e12e3b831858d149cfdd6e1d0fdc5137.tar.gz
-  sha256: fd5c96e659ecaf51a00bacbc40f88c257e91c7a0610d2c8b79546cc6d68b76f5
+  url: https://github.com/prefix-dev/rattler-build/archive/1b186d131dbffd1affd1807dbd2b587c4a24c960.tar.gz
+  sha256: 2429fb735f4be02e89ad8f8c77b4ea5114522d0bd9fce12188db867b4d45e846
 
 build:
   script:
